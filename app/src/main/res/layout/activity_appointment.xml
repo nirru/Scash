@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_color"
+    tools:context="com.oxilo.scash.AppointmentActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/text_style"
+        android:visibility="visible"
+        android:text="Doctor schdule"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/doc_start_date"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="Date"
+            android:textColor="#ffffff"
+            android:gravity="center|top"/>
+
+        <TextView
+            android:id="@+id/doc_end_date"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="End Date"
+            android:visibility="visible"
+            android:textColor="#ffffff"
+            android:gravity="center|top"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/doc_start_time"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="Start Time"
+            android:textColor="#ffffff"
+            android:gravity="center|top"/>
+
+        <TextView
+            android:id="@+id/doc_end_time"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="End Time"
+            android:textColor="#ffffff"
+            android:gravity="center|top"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/holiday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Holiday"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:padding="15dp"
+        android:visibility="visible"
+        android:layout_gravity="center"/>
+
+    <TextView
+        style="@style/text_style"
+        android:text="Book your appointment"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/booking_date"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:hint="Please select a date"
+            android:textColor="#ffffff"
+            android:gravity="center|top"/>
+
+        <TextView
+            android:id="@+id/booking_time"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:hint="Please select a time"
+            android:textColor="#ffffff"
+            android:gravity="center|top"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/consultaion_fee"
+        style="@style/text_style"
+        android:text="Consultation Fee:"/>
+
+    <Button
+        android:id="@+id/book"
+        android:layout_marginTop="10dp"
+        style="@style/button_style"
+        android:text="Book Appointment"/>
+
+</LinearLayout>
+
+</RelativeLayout>

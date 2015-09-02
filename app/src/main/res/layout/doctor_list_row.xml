@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:gravity="top|center"
+        android:orientation="horizontal"
+        android:background="@color/app_background_color"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/imageView1"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:src="@drawable/hospital"
+            android:layout_weight="0.95" />
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:layout_weight="1.05">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/text_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+                <ImageView android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hand" />
+                <TextView
+                    android:textSize="@dimen/Normal_text"
+                    android:textColor="@color/sim_text"
+                    android:id="@+id/doc_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="Name" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/text_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+                <ImageView
+                    android:id="@id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hand" />
+                <TextView
+                    android:textColor="@color/sim_text"
+                    android:id="@+id/doc_specify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="specification" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/text_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+                <ImageView
+                    android:id="@id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hand" />
+                <TextView
+                    android:textColor="@color/sim_text"
+                    android:id="@+id/doc_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@id/text_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:layout_weight="1.0">
+                <TextView
+                    android:textColor="@color/sim_text"
+                    android:id="@+id/view_sch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="View schdule" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

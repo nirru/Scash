@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Scash</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_intro">IntroActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="title_activity_appointment">AppointmentActivity</string>
+
+    <string name="constant_hasmap">HASPMAP</string>
+
+    <string name="spinner_prompt">Select Holiday</string>
+    <string-array name="spinner_aray">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thrusday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+    <string name="title_activity_doc_profile">Doc_profile</string>
+</resources>

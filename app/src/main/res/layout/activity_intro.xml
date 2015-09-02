@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.oxilo.scash.IntroActivity"
+    android:background="@color/app_background_color">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:src="@mipmap/logo"/>
+
+        <TextView
+            android:id="@+id/mobile_cash"
+            style="@style/edit_text_style"
+            android:layout_marginTop="@dimen/content_top_margin"
+            android:text="Mobile cash"/>
+
+        <TextView
+            android:id="@+id/health"
+            style="@style/edit_text_style"
+            android:text="Health"
+            android:layout_marginTop="@dimen/content_top_margin"/>
+
+       <TextView
+            android:id="@+id/help"
+           style="@style/edit_text_style"
+           android:text="Help"
+           android:layout_marginTop="@dimen/content_top_margin"/>
+
+        <TextView
+            android:id="@+id/faq"
+            style="@style/edit_text_style"
+            android:text="Faq"
+            android:layout_marginTop="@dimen/content_top_margin"/>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

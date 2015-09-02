@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.oxilo.scash.LoginActivity"
+    android:background="@color/app_background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/logo"/>
+        
+        <EditText
+            android:id="@+id/login"
+            style="@style/edit_text_style"
+            android:layout_marginTop="@dimen/content_vertical_margin"
+            android:hint="Email"/>
+
+        <EditText
+            android:id="@+id/password"
+            style="@style/edit_text_style"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:inputType="textPassword"
+            android:password="true"
+            android:hint="Password"/>
+
+        <RadioGroup
+            android:id="@+id/radio"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctor"
+                android:checked="true"
+                android:id="@+id/radioButton1" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pateint"
+                android:id="@+id/radioButton2" />
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/button_style"
+            android:text="Login"
+            android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+        <TextView
+            android:id="@+id/forgot"
+            style="@style/text_style"
+            android:text="Forgot your password"
+            android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+        <TextView
+            android:id="@+id/sign_up"
+            style="@style/text_style"
+            android:text="Don't have an account \nSignUp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
